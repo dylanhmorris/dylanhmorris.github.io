@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>C. Jessica E. Metcalf | Dylan H. Morris</title>
+    <link>/authors/c.-jessica-e.-metcalf/</link>
+      <atom:link href="/authors/c.-jessica-e.-metcalf/index.xml" rel="self" type="application/rss+xml" />
+    <description>C. Jessica E. Metcalf</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2021 Dylan H. Morris</copyright><lastBuildDate>Wed, 01 Jul 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/media/icon_hu7d07f536adf3b1452f2fe0496f8451a4_144055_512x512_fill_lanczos_center_2.png</url>
+      <title>C. Jessica E. Metcalf</title>
+      <link>/authors/c.-jessica-e.-metcalf/</link>
+    </image>
+    
+    <item>
+      <title>Mathematical models to guide pandemic response</title>
+      <link>/publication/metcalf-2020-mathematical/</link>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
+      <guid>/publication/metcalf-2020-mathematical/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

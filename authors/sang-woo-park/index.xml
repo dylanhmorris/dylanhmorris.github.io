@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sang Woo Park | Dylan H. Morris</title>
+    <link>/authors/sang-woo-park/</link>
+      <atom:link href="/authors/sang-woo-park/index.xml" rel="self" type="application/rss+xml" />
+    <description>Sang Woo Park</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2021 Dylan H. Morris</copyright><lastBuildDate>Wed, 01 Jul 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/media/icon_hu7d07f536adf3b1452f2fe0496f8451a4_144055_512x512_fill_lanczos_center_2.png</url>
+      <title>Sang Woo Park</title>
+      <link>/authors/sang-woo-park/</link>
+    </image>
+    
+    <item>
+      <title>Mathematical models to guide pandemic response</title>
+      <link>/publication/metcalf-2020-mathematical/</link>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
+      <guid>/publication/metcalf-2020-mathematical/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mary Caswell Stoddard | Dylan H. Morris</title>
+    <link>/authors/mary-caswell-stoddard/</link>
+      <atom:link href="/authors/mary-caswell-stoddard/index.xml" rel="self" type="application/rss+xml" />
+    <description>Mary Caswell Stoddard</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2021 Dylan H. Morris</copyright><lastBuildDate>Mon, 01 Jun 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/media/icon_hu7d07f536adf3b1452f2fe0496f8451a4_144055_512x512_fill_lanczos_center_2.png</url>
+      <title>Mary Caswell Stoddard</title>
+      <link>/authors/mary-caswell-stoddard/</link>
+    </image>
+    
+    <item>
+      <title>Wild hummingbirds discriminate nonspectral colors</title>
+      <link>/publication/stoddard-2020-wild/</link>
+      <pubDate>Mon, 01 Jun 2020 00:00:00 +0000</pubDate>
+      <guid>/publication/stoddard-2020-wild/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

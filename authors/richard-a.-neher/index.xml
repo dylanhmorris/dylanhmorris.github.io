@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Richard A. Neher | Dylan H. Morris</title>
+    <link>/authors/richard-a.-neher/</link>
+      <atom:link href="/authors/richard-a.-neher/index.xml" rel="self" type="application/rss+xml" />
+    <description>Richard A. Neher</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2021 Dylan H. Morris</copyright><lastBuildDate>Sun, 01 Nov 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/media/icon_hu7d07f536adf3b1452f2fe0496f8451a4_144055_512x512_fill_lanczos_center_2.png</url>
+      <title>Richard A. Neher</title>
+      <link>/authors/richard-a.-neher/</link>
+    </image>
+    
+    <item>
+      <title>Asynchrony between virus diversity and antibody selection limits influenza virus evolution</title>
+      <link>/publication/morris-2020-asynchrony/</link>
+      <pubDate>Sun, 01 Nov 2020 00:00:00 +0000</pubDate>
+      <guid>/publication/morris-2020-asynchrony/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Asynchrony between virus diversity and immune selection limits influenza virus evolution</title>
+      <link>/talk/morris-2019-eeid/</link>
+      <pubDate>Sat, 01 Jun 2019 00:00:00 +0000</pubDate>
+      <guid>/talk/morris-2019-eeid/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

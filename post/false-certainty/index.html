@@ -1,0 +1,1137 @@
+<!DOCTYPE html><html lang="en-us" >
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  
+  
+    <meta name="generator" content="Wowchemy 5.1.0 for Hugo" />
+  
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Dylan H. Morris" />
+
+  
+  
+  
+    
+  
+  <meta name="description" content="I recently posted a thread on twitter about virus decay. In it, I explained that it&rsquo;s a bit misleading to think about SARS-CoV-2 &ldquo;surviving on plastic for 3 days&rdquo; because the virus decays exponentially: if you start out with more virus, you&rsquo;ll have detectable virus around for longer." />
+
+  
+  <link rel="alternate" hreflang="en-us" href="/post/false-certainty/" />
+
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  
+
+  
+  
+  
+    <meta name="theme-color" content="#4b4d9c" />
+  
+
+  
+  
+    
+    <script src="/js/mathjax-config.js"></script>
+  
+
+  
+  
+  
+  
+    
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.0/css/academicons.min.css" integrity="sha512-W4yqoT1+8NLkinBLBZko+dFB2ZbHsYLDdr50VElllRcNt2Q4/GSs6u71UHKxB7S6JEMCp5Ve4xjh3eGQl/HRvg==" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha256-FMvZuGapsJLjouA6k7Eo2lusoAX9i0ShlWFG6qt7SLc=" crossorigin="anonymous">
+
+    
+    
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/github.min.css" crossorigin="anonymous" title="hl-light" media="print" onload="this.media='all'">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" media="print" onload="this.media='all'" disabled>
+        
+      
+    
+
+    
+    
+    
+
+    
+
+    
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+  
+
+  
+  
+  
+    
+      
+      <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&family=Source+Sans+Pro&display=swap">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&family=Source+Sans+Pro&display=swap" media="print" onload="this.media='all'">
+    
+  
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.d9e6b898cdf484c38235b790a8e47f7e.css" />
+
+  
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-161764065-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url, target) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           if (target !== '_blank') {
+             document.location = url;
+           }
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'UA-161764065-1', { 'anonymize_ip': true });
+  gtag('set', {'cookie_flags': 'SameSite=None;Secure'});
+
+  
+  document.addEventListener('click', onClickCallback, false);
+</script>
+
+
+  
+
+  
+
+  
+
+
+
+
+  
+  
+  
+
+  
+
+  
+    <link rel="manifest" href="/index.webmanifest" />
+  
+
+  <link rel="icon" type="image/png" href="/media/icon_hu7d07f536adf3b1452f2fe0496f8451a4_144055_32x32_fill_lanczos_center_2.png" />
+  <link rel="apple-touch-icon" type="image/png" href="/media/icon_hu7d07f536adf3b1452f2fe0496f8451a4_144055_180x180_fill_lanczos_center_2.png" />
+
+  <link rel="canonical" href="/post/false-certainty/" />
+
+  
+  
+  
+  
+  
+  
+  
+  
+    
+    
+  
+  
+  <meta property="twitter:card" content="summary" />
+  
+    <meta property="twitter:site" content="@dylanhmorris" />
+    <meta property="twitter:creator" content="@dylanhmorris" />
+  
+  <meta property="og:site_name" content="Dylan H. Morris" />
+  <meta property="og:url" content="/post/false-certainty/" />
+  <meta property="og:title" content="The dangers of seeking false certainty | Dylan H. Morris" />
+  <meta property="og:description" content="I recently posted a thread on twitter about virus decay. In it, I explained that it&rsquo;s a bit misleading to think about SARS-CoV-2 &ldquo;surviving on plastic for 3 days&rdquo; because the virus decays exponentially: if you start out with more virus, you&rsquo;ll have detectable virus around for longer." /><meta property="og:image" content="/media/icon_hu7d07f536adf3b1452f2fe0496f8451a4_144055_512x512_fill_lanczos_center_2.png" />
+    <meta property="twitter:image" content="/media/icon_hu7d07f536adf3b1452f2fe0496f8451a4_144055_512x512_fill_lanczos_center_2.png" /><meta property="og:locale" content="en-us" />
+  
+    
+      <meta
+        property="article:published_time"
+        content="2020-04-16T21:36:58-04:00"
+      />
+    
+    <meta property="article:modified_time" content="2021-04-26T18:00:05-06:00">
+  
+
+  
+
+
+    
+
+
+
+
+
+
+  
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "/post/false-certainty/"
+  },
+  "headline": "The dangers of seeking false certainty",
+  
+  "datePublished": "2020-04-16T21:36:58-04:00",
+  "dateModified": "2021-04-26T18:00:05-06:00",
+  
+  "author": {
+    "@type": "Person",
+    "name": "Dylan H. Morris"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "Dylan H. Morris",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "/media/icon_hu7d07f536adf3b1452f2fe0496f8451a4_144055_192x192_fill_lanczos_center_2.png"
+    }
+  },
+  "description": "I recently posted a thread on twitter about virus decay. In it, I explained that it\u0026rsquo;s a bit misleading to think about SARS-CoV-2 \u0026ldquo;surviving on plastic for 3 days\u0026rdquo; because the virus decays exponentially: if you start out with more virus, you\u0026rsquo;ll have detectable virus around for longer."
+}
+</script>
+
+  
+
+  
+
+  
+  
+  
+  
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.1/cookieconsent.min.js" integrity="sha256-5VhCqFam2Cn+yjw61zbBNrbHVJ6SRydPeKopYlngbiQ=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.1/cookieconsent.min.css" integrity="sha256-zQ0LblD/Af8vOppw18+2anxsuaz3pWYyVWi+bTvTH8Q=" crossorigin="anonymous">
+  
+  <script>
+  window.addEventListener("load", function(){
+    window.cookieconsent.initialise({
+      "palette": {
+        "popup": {
+          "background": "#4b4d9c",
+          "text": "rgb(255, 255, 255)"
+        },
+        "button": {
+          "background": "rgb(255, 255, 255)",
+          "text": "#4b4d9c"
+        }
+      },
+      "theme": "classic",
+      "content": {
+        "message": "This website uses cookies to ensure you get the best experience on our website.",
+        "dismiss": "Got it!",
+        "link": "Learn more",
+        "href": "https://www.cookiesandyou.com"
+      }
+    })});
+  </script>
+
+
+  
+
+
+
+
+
+  <title>The dangers of seeking false certainty | Dylan H. Morris</title>
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="24552bd4f8049b9d437ba4532e83d9ae" >
+
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.min.226a9011996d125bf3fe4a5f22353a49.js"></script>
+
+  
+
+
+
+
+  <div class="page-header">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container-xl">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/">Dylan H. Morris</a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/">Dylan H. Morris</a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#about"><span>Home</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#publications"><span>Publications</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#talks"><span>Talks</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#posts"><span>Blog posts</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#contact"><span>Contact</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+      
+      
+        
+      
+
+      
+      
+
+      
+      
+      <li class="nav-item dropdown theme-dropdown">
+        <a href="#" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-label="Display preferences">
+          <i class="fas fa-moon" aria-hidden="true"></i>
+        </a>
+        <div class="dropdown-menu">
+          <a href="#" class="dropdown-item js-set-theme-light">
+            <span>Light</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-dark">
+            <span>Dark</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-auto">
+            <span>Automatic</span>
+          </a>
+        </div>
+      </li>
+      
+
+      
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+  </div>
+
+  <div class="page-body">
+    <article class="article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1>The dangers of seeking false certainty</h1>
+
+  
+  <p class="page-subtitle">&ldquo;X won&rsquo;t stop COVID on its own&rdquo; is not an argument against doing X</p>
+  
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+          Last updated on
+      
+    
+    2021-04-26
+  </span>
+  
+
+  
+
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+    
+
+
+
+
+
+  
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style">
+      <p>I recently posted a thread on twitter about virus decay. In it, I explained that it&rsquo;s a bit misleading to think about SARS-CoV-2 &ldquo;surviving on plastic for 3 days&rdquo; because the virus decays exponentially: if you start out with more virus, you&rsquo;ll have detectable virus around for longer. If you start out with less, it&rsquo;ll be around for less long.</p>
+<p>I thought this was a pretty ho-hum point, but the thread went viral:</p>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">A friend asked me about why results from our recent paper on aerosol and surface stability disagreed with those from another study that got press suggesting the virus was &quot;viable on plastic for up to nine days&quot; This gave me a chance to explain a common misconception <br>(THREAD)</p>&mdash; Dylan Morris (isopod/facemask fan account) (@dylanhmorris) <a href="https://twitter.com/dylanhmorris/status/1249443687484010498?ref_src=twsrc%5Etfw">April 12, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<p>In the thread, I explained that one reason I was so leery of stating some absolute time to undectectability was that I didn&rsquo;t want people to think that 3 days (or any number of days) was a magical threshold. Two days and 23 hours? Danger! Three days? Safe!</p>
+<p>When I put it like that, it&rsquo;s obviously false. Every hour makes you safer, but there&rsquo;s no magic moment when things switch from definitely dangerous to definitely safe.</p>
+<p>But we all crave certainty, especially when the world is frightening and uncertain. And so we all dichotomize, dividing the world into sufficient and insufficient precautions, interventions that will help and those that will not, and so on.</p>
+<p>This dichotomization is dangerous. The COVID pandemic has provided many painful examples.</p>
+<p>In March, senior British public health officials were deciding whether to close concerts and sporting events, as many countries were doing. In an interview with Prime Minister Boris Johnson, Deputy Chief Medical Officer Dr. Jenny Harries explained why the UK had chosen not to:</p>
+<blockquote>In this country, we have expert modelers looking at what we think will happen with the virus. We've looked at what sorts of interventions might help manage this as we go forward, push the peak of the epidemic forward. And in general, those sorts of events and big gatherings are not seen to be something which is going to have a big effect. </blockquote>
+<p>The moment happens at 3:20 into this clip:</p>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Dr Jenny Harries, Deputy Chief Medical Officer, came into Downing Street to answer some of the most commonly asked questions on coronavirus. <a href="https://t.co/jByRhFFfat">pic.twitter.com/jByRhFFfat</a></p>&mdash; Boris Johnson #StayHomeSaveLives (@BorisJohnson) <a href="https://twitter.com/BorisJohnson/status/1237760976482598913?ref_src=twsrc%5Etfw">March 11, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<p>The day the interview was posted to Johnson&rsquo;s twitter account was the second day of the Cheltenham Races, a four day series of horse races. More than 60,000 spectators attended each day. Multiple prominent cases of COVID <a href="https://www.independent.co.uk/sport/racing/coronavirus-deaths-uk-cases-ap-mccoy-cheltenham-festival-a9462321.html" target="_blank" rel="noopener">have been traced to it</a>.</p>
+<p>I did a double take when I watched the interview (some days later) and heard Harries&rsquo;s words. The argument was clearly wrong. Closing large events is critical to controling any novel virus. But it&rsquo;s all the more important with a virus like SARS-CoV-2, which depends heavily upon rare but high impact &ldquo;superspreading events&rdquo;&mdash;in which one person infects many&mdash;to propagate. Superspreading is especially likely at large events like a concert or a sporting event.</p>
+<p>But it wasn&rsquo;t the wrongness of Harries&rsquo;s argument that struck me. It was that I knew where the wrong argument had come from. I knew who the &ldquo;expert modelers&rdquo; were, and I knew that Harries had misunderstood their conclusions. How? Because I had corrected the same misunderstanding before. A few days earlier, I had spotted a British journalist tweeting approvingly about a corpus of policy and planning documents released (under pressure) by the UK Goverment.</p>
+<p><img src="sports-dont-work.png" alt="png"></p>
+<p>I looked. He had misread the report. It said that closing sporting events would do little <em>if nothing else were also done</em>. That is, closing sporting events and concerts could not stop COVID on its own. But the fact that it was not <em>sufficient</em> in no way meant that it was not <em>necessary</em>.</p>
+<p>It seems obvious when I say it that way. So why did the journalist misread the report? Why did Harries? Dichotomization. If we divide the world into &ldquo;stuff that works&rdquo; and &ldquo;stuff that doesn&rsquo;t&rdquo;, it&rsquo;s easy to imagine that &ldquo;X isn&rsquo;t enough&rdquo; means &ldquo;there&rsquo;s no point in doing X&rdquo;.</p>
+<p>But to quote a great military leader, &ldquo;it&rsquo;s a trap!&rdquo; And once you notice false dichotomous thinking for the first time, you begin to see it everywhere.</p>
+<p>Prof. Timothy Gowers has received a Fields Medal, the highest honor for research in mathematics. But he is modest, and raised a good faith question <a href="https://twitter.com/wtgowers/status/1249748741449568257" target="_blank" rel="noopener">on twitter</a> about facemasks:</p>
+<p><img src="gowers.png" alt="png"></p>
+<p>He was, of course, not naive. He was correct. The people making the anti-mask argument were engaged in dichotomous thinking: if masks cannot make others perfectly safe from you, there&rsquo;s no point to them. Rubbish. Nothing, as I constantly tell people, can make us perfectly, 100%, for-certain safe. We&rsquo;re engaged in a game of risk reduction, not risk elimination. Masks are great tools for risk reduction, even though they cannot eliminate risk.</p>
+<p>Examples of dangerous dichotomous thinking about COVID abound. People think that because aerosol-driven superspreading is rare and hard to observe, it <a href="https://www.nejm.org/doi/full/10.1056/NEJMc2007942" target="_blank" rel="noopener">cannot happen</a>. <a href="https://www.latimes.com/world-nation/story/2020-03-29/coronavirus-choir-outbreak" target="_blank" rel="noopener">It can</a>. They think that because closing schools might not suffice to prevent the spread of COVID, it&rsquo;s <a href="https://www.bbc.com/news/health-52180783" target="_blank" rel="noopener">not worth the costs</a>. <a href="https://twitter.com/DrSamSims/status/1247445729439895555" target="_blank" rel="noopener">It may well be</a>. People want certainty. There isn&rsquo;t certainty at this stage in a pandemic. We must push forward and try to save lives despite our ignorance.</p>
+<p>Actually, that&rsquo;s not quite true. One thing is certain. If, in seeking perfect certainty and perfect safety, we dichotomously reject any measures that are not guaranteed to save us&mdash;or guaranteed to save us on their own&mdash;the uncertain threat of COVID will become certain catastrophe.</p>
+
+    </div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+      
+      <a href="/"><img class="avatar mr-3 avatar-circle" src="/authors/dylan/avatar_hu262700c8adb2b3cc823710650a4933cf_24093_270x270_fill_q90_lanczos_center.jpg" alt="Dylan H. Morris"></a>
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="/">Dylan H. Morris</a></h5>
+      <h6 class="card-subtitle">Postdoctoral Researcher, Ecology &amp; Evolutionary Biology</h6>
+      <p class="card-text">I&rsquo;m a Postdoctoral Researcher in Ecology &amp; Evolutionary Biology interested in mathematical biology, virus ecology and evolution, and population genetics</p>
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="/#contact" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://twitter.com/dylanhmorris" target="_blank" rel="noopener">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://scholar.google.com/citations?user=YrX1Z8MAAAAJ" target="_blank" rel="noopener">
+        <i class="ai ai-google-scholar"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/dylanhmorris" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="/files/cv.pdf" >
+        <i class="ai ai-cv"></i>
+      </a>
+    </li>
+  
+</ul>
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+</article>
+  </div>
+
+  <div class="page-footer">
+    
+    
+    <div class="container">
+      <footer class="site-footer">
+
+  
+
+  
+
+  
+  <p class="powered-by">
+    © 2021 Dylan H. Morris
+  </p>
+  
+
+  
+  
+
+
+
+
+
+
+  <p class="powered-by">
+    
+    
+    
+      
+      
+      
+      
+      
+      
+      Published with <a href="https://wowchemy.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Wowchemy</a> — the free, <a href="https://github.com/wowchemy/wowchemy-hugo-modules" target="_blank" rel="noopener">open source</a> website builder that empowers creators.
+    
+  </p>
+</footer>
+
+    </div>
+    
+  </div>
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/instant.page/5.1.0/instantpage.min.js" integrity="sha512-1+qUtKoh9XZW7j+6LhRMAyOrgSQKenQ4mluTR+cvxXjP1Z54RxZuzstR/H9kgPXQsVB8IW7DMDFUJpzLjvhGSQ==" crossorigin="anonymous"></script>
+
+      
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.8.4/mermaid.min.js" integrity="sha512-as1BF4+iHZ3BVO6LLDQ7zrbvTXM+c/1iZ1qII/c3c4L8Rn5tHLpFUtpaEtBNS92f+xGsCzsD7b62XP3XYap6oA==" crossorigin="anonymous" title="mermaid"></script>
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/highlight.min.js" integrity="sha512-TDKKr+IvoqZnPzc3l35hdjpHD0m+b2EC2SrLEgKDRWpxf2rFCxemkgvJ5kfU48ip+Y+m2XVKyOCD85ybtlZDmw==" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/r.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/python.min.js"></script>
+        
+      
+
+    
+
+    
+    
+    
+
+    
+    
+
+    
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    <script src="/js/bootstrap.bundle.min.6aed84840afc03ab4d5750157f69c120.js"></script>
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <script src="/en/js/wowchemy.min.163b8d9708d5ac450497c0142c0dad35.js"></script>
+
+    
+
+
+
+
+
+
+</body>
+</html>

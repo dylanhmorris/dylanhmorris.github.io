@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Recent &amp; Upcoming Talks | Dylan H. Morris</title>
+    <link>/talk/</link>
+      <atom:link href="/talk/index.xml" rel="self" type="application/rss+xml" />
+    <description>Recent &amp; Upcoming Talks</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2021 Dylan H. Morris</copyright>
+    <image>
+      <url>/media/icon_hu7d07f536adf3b1452f2fe0496f8451a4_144055_512x512_fill_lanczos_center_2.png</url>
+      <title>Recent &amp; Upcoming Talks</title>
+      <link>/talk/</link>
+    </image>
+    
+    <item>
+      <title>A Social Dilemma of Sociality and Collective Processing</title>
+      <link>/talk/morris-2020-collective/</link>
+      <pubDate>Thu, 05 Mar 2020 00:00:00 +0000</pubDate>
+      <guid>/talk/morris-2020-collective/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Asynchrony between virus diversity and immune selection limits influenza virus evolution</title>
+      <link>/talk/morris-2019-eeid/</link>
+      <pubDate>Sat, 01 Jun 2019 00:00:00 +0000</pubDate>
+      <guid>/talk/morris-2019-eeid/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Asynchrony between virus diversity and immune selection limits influenza virus evolution</title>
+      <link>/talk/morris-2018-ortho/</link>
+      <pubDate>Sat, 01 Sep 2018 00:00:00 +0000</pubDate>
+      <guid>/talk/morris-2018-ortho/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Population dynamics constrain immune escape in human influenza A viruses</title>
+      <link>/talk/morris-2017-eswi/</link>
+      <pubDate>Fri, 01 Sep 2017 00:00:00 +0000</pubDate>
+      <guid>/talk/morris-2017-eswi/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

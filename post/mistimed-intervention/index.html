@@ -1,0 +1,1305 @@
+<!DOCTYPE html><html lang="en-us" >
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  
+  
+    <meta name="generator" content="Wowchemy 5.1.0 for Hugo" />
+  
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Dylan H. Morris" />
+
+  
+  
+  
+    
+  
+  <meta name="description" content="A minimal mathematical model of the problems involved in attempting to enact an optimally-timed, short-lived disease control effort" />
+
+  
+  <link rel="alternate" hreflang="en-us" href="/post/mistimed-intervention/" />
+
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  
+
+  
+  
+  
+    <meta name="theme-color" content="#4b4d9c" />
+  
+
+  
+  
+    
+    <script src="/js/mathjax-config.js"></script>
+  
+
+  
+  
+  
+  
+    
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.0/css/academicons.min.css" integrity="sha512-W4yqoT1+8NLkinBLBZko+dFB2ZbHsYLDdr50VElllRcNt2Q4/GSs6u71UHKxB7S6JEMCp5Ve4xjh3eGQl/HRvg==" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha256-FMvZuGapsJLjouA6k7Eo2lusoAX9i0ShlWFG6qt7SLc=" crossorigin="anonymous">
+
+    
+    
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/github.min.css" crossorigin="anonymous" title="hl-light" media="print" onload="this.media='all'">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" media="print" onload="this.media='all'" disabled>
+        
+      
+    
+
+    
+    
+    
+
+    
+
+    
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+  
+
+  
+  
+  
+    
+      
+      <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&family=Source+Sans+Pro&display=swap">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&family=Source+Sans+Pro&display=swap" media="print" onload="this.media='all'">
+    
+  
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.d9e6b898cdf484c38235b790a8e47f7e.css" />
+
+  
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-161764065-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url, target) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           if (target !== '_blank') {
+             document.location = url;
+           }
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'UA-161764065-1', { 'anonymize_ip': true });
+  gtag('set', {'cookie_flags': 'SameSite=None;Secure'});
+
+  
+  document.addEventListener('click', onClickCallback, false);
+</script>
+
+
+  
+
+  
+
+  
+
+
+
+
+  
+  
+  
+
+  
+
+  
+    <link rel="manifest" href="/index.webmanifest" />
+  
+
+  <link rel="icon" type="image/png" href="/media/icon_hu7d07f536adf3b1452f2fe0496f8451a4_144055_32x32_fill_lanczos_center_2.png" />
+  <link rel="apple-touch-icon" type="image/png" href="/media/icon_hu7d07f536adf3b1452f2fe0496f8451a4_144055_180x180_fill_lanczos_center_2.png" />
+
+  <link rel="canonical" href="/post/mistimed-intervention/" />
+
+  
+  
+  
+  
+  
+  
+  
+  
+    
+  
+  
+  <meta property="twitter:card" content="summary_large_image" />
+  
+    <meta property="twitter:site" content="@dylanhmorris" />
+    <meta property="twitter:creator" content="@dylanhmorris" />
+  
+  <meta property="og:site_name" content="Dylan H. Morris" />
+  <meta property="og:url" content="/post/mistimed-intervention/" />
+  <meta property="og:title" content="The risks of (mis)timing an exponential | Dylan H. Morris" />
+  <meta property="og:description" content="A minimal mathematical model of the problems involved in attempting to enact an optimally-timed, short-lived disease control effort" /><meta property="og:image" content="/post/mistimed-intervention/featured.jpg" />
+    <meta property="twitter:image" content="/post/mistimed-intervention/featured.jpg" /><meta property="og:locale" content="en-us" />
+  
+    
+      <meta
+        property="article:published_time"
+        content="2020-03-17T17:19:54-04:00"
+      />
+    
+    <meta property="article:modified_time" content="2021-04-26T18:00:05-06:00">
+  
+
+  
+
+
+    
+
+
+
+
+
+
+  
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "/post/mistimed-intervention/"
+  },
+  "headline": "The risks of (mis)timing an exponential",
+  
+  "image": [
+    "/post/mistimed-intervention/featured.jpg"
+  ],
+  
+  "datePublished": "2020-03-17T17:19:54-04:00",
+  "dateModified": "2021-04-26T18:00:05-06:00",
+  
+  "author": {
+    "@type": "Person",
+    "name": "Dylan H. Morris"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "Dylan H. Morris",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "/media/icon_hu7d07f536adf3b1452f2fe0496f8451a4_144055_192x192_fill_lanczos_center_2.png"
+    }
+  },
+  "description": "A minimal mathematical model of the problems involved in attempting to enact an optimally-timed, short-lived disease control effort"
+}
+</script>
+
+  
+
+  
+
+  
+  
+  
+  
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.1/cookieconsent.min.js" integrity="sha256-5VhCqFam2Cn+yjw61zbBNrbHVJ6SRydPeKopYlngbiQ=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.1/cookieconsent.min.css" integrity="sha256-zQ0LblD/Af8vOppw18+2anxsuaz3pWYyVWi+bTvTH8Q=" crossorigin="anonymous">
+  
+  <script>
+  window.addEventListener("load", function(){
+    window.cookieconsent.initialise({
+      "palette": {
+        "popup": {
+          "background": "#4b4d9c",
+          "text": "rgb(255, 255, 255)"
+        },
+        "button": {
+          "background": "rgb(255, 255, 255)",
+          "text": "#4b4d9c"
+        }
+      },
+      "theme": "classic",
+      "content": {
+        "message": "This website uses cookies to ensure you get the best experience on our website.",
+        "dismiss": "Got it!",
+        "link": "Learn more",
+        "href": "https://www.cookiesandyou.com"
+      }
+    })});
+  </script>
+
+
+  
+
+
+
+
+
+  <title>The risks of (mis)timing an exponential | Dylan H. Morris</title>
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="ac8b0edf8c37ad7521e969fe05455247" >
+
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.min.226a9011996d125bf3fe4a5f22353a49.js"></script>
+
+  
+
+
+
+
+  <div class="page-header">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container-xl">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/">Dylan H. Morris</a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/">Dylan H. Morris</a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#about"><span>Home</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#publications"><span>Publications</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#talks"><span>Talks</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#posts"><span>Blog posts</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#contact"><span>Contact</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+      
+      
+        
+      
+
+      
+      
+
+      
+      
+      <li class="nav-item dropdown theme-dropdown">
+        <a href="#" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-label="Display preferences">
+          <i class="fas fa-moon" aria-hidden="true"></i>
+        </a>
+        <div class="dropdown-menu">
+          <a href="#" class="dropdown-item js-set-theme-light">
+            <span>Light</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-dark">
+            <span>Dark</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-auto">
+            <span>Automatic</span>
+          </a>
+        </div>
+      </li>
+      
+
+      
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+  </div>
+
+  <div class="page-body">
+    <article class="article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+
+<div class="article-container pt-3">
+  <h1>The risks of (mis)timing an exponential</h1>
+
+  
+  <p class="page-subtitle">A minimal model of disease control under uncertainty</p>
+  
+
+  
+
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+  <span >
+      <a href="/authors/dylan/">Dylan H. Morris</a></span>, <span >
+      <a href="/authors/fernando-w.-rossine/">Fernando W. Rossine</a></span>
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+          Last updated on
+      
+    
+    2021-04-26
+  </span>
+  
+
+  
+
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+  
+
+
+
+
+
+</div>
+
+
+<div class="article-header article-container featured-image-wrapper mt-4 mb-4" style="max-width: 720px; max-height: 558px;">
+  <div style="position: relative">
+    <img src="/post/mistimed-intervention/featured_hu9acff1ddd0677efe7c076af7ac71bb33_568925_720x0_resize_q90_lanczos.jpg" alt="" class="featured-image">
+    
+  </div>
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style">
+      <h1 id="introduction">Introduction</h1>
+<p>The following model was inspired by the debates surrounding the United Kingdom Government&rsquo;s <a href="https://www.theatlantic.com/health/archive/2020/03/coronavirus-pandemic-herd-immunity-uk-boris-johnson/608065/" target="_blank" rel="noopener">initial strategy</a> for addressing the COVID-19 pandemic.</p>
+<h2 id="the-debate">The debate</h2>
+<p>The UK&rsquo;s proposed approach, <a href="https://www.bbc.com/news/health-51915302" target="_blank" rel="noopener">prior to a recent policy change</a>, was based on three assumptions:</p>
+<ol>
+<li>Restrictive disease control measures carry social and economic cost.</li>
+<li>Even leaving aside cost, the most restrictive measures can only be maintained for short periods before compliance becomes a problem.</li>
+<li>Individuals who are infected with COVID-19 and recover <a href="http://dylanhmorris.com/post/immunity-primer" target="_blank" rel="noopener">become immune, at least temporarily</a>, and will not be reinfected during the epidemic.</li>
+</ol>
+<p>There is little disagreement about the first or third assumptions. The degree to which the second assumption holds has been a matter of some debate, but it is plausible that it holds at least to some degree for a sufficiently long and arduous intervention.</p>
+<p>Given these assumptions, the UK Government determined that the most restrictive and effective control measures should not be imposed immediately. They should instead be used during a period of rapid epidemic expansion, thus maximizing the number of cases averted and avoiding a large second epidemic peak after the relaxation of control measures.</p>
+<p>Modelers highlighted the risks of intervening early and then backing off too much. An aggressive response that causes a transient decline in total cases but fails to eradicate a disease fully can lead to an <a href="https://personalpages.manchester.ac.uk/staff/thomas.house/blog/modelling-herd-immunity.html" target="_blank" rel="noopener">explosive second epidemic peak</a>. This occurs because the overly aggressive intervention slows the accumulation of immunity to the disease in the population. When measures are relaxed, many individuals remain susceptible, and the number of infections can grow rapidly.</p>
+<p>We believe, however, that there there are potential dangers in keeping disease-control powder dry in the name of maximizing efficacy and minimizing the risk of resurgence. In particular, we are concerned about imperfect implementation, whether due to noisy estimates of case counts, errors in epidemiological parameter estimation, or unplanned delays in policy implementation. In the case of explosive epidemic of a novel pathogen, imperfect implementation of this strategy can produce extreme costs. This is due to an asymmetry between underreaction or acting too late and overreaction or acting too early: only overreaction leaves sufficent time and resources for a course-correction.</p>
+<h2 id="the-problem-exponential-growth-magnifies-errors">The problem: exponential growth magnifies errors</h2>
+<p>During the initial epidemic spread of a novel zoonotic disease like COVID-19 – a disease to which almost no-one in the population is immune – infectious cases increase near-exponentially.</p>
+<p>Exponential growth magnifies implementation errors. If an intervention that is too little or too late, there may not be time to course-correct before the epidemic spikes to a large peak number of infectious individuals. If there is an insufficiently controlled epidemic peak, <a href="https://www.statnews.com/2020/03/11/flattening-curve-coronavirus/" target="_blank" rel="noopener">hospitals and emergency services can be overwhelmed</a>, case-fatality rates rise, and the overall epidemic morbidity and mortality rise dramatically. Social and economic costs are also magnified.</p>
+<p>Since verbal arguments do not always stand up to more rigorous analysis, we have developed a simple mathematical model to encode the basic problem of an optimal short intervention aimed and reducing the highest peak in an epidemic.</p>
+<h2 id="this-blog-post">This blog post</h2>
+<p>We aim here at a semi-technical presentation of our work. We wish to provide sufficient detail – and code – to allow researchers to assess the work. But as this is a blog post, we will try to provide enough guidance for the non-specialist reader to make things accessible. That said, this is not intended as a tutorial on epidemiological modeling, and some sections (in particular the specification and analysis of the mathematical model) are dense and technical. A number of particularly technical points are deferred to an <a href="#technical-appendix">appendix</a> at the end of the post.</p>
+<h1 id="model">Model</h1>
+<h2 id="aim-peak-reduction">Aim: peak reduction</h2>
+<p>The strategies being debated aim to maximize the benefits from a highly efficacious intervention that can only be maintained for a limited time. To assess the risks of mis-implementing such a strategy, we first specify the goal to be accomplished and determine an optimal strategy. We then assess the costs of aiming at but mis-implementing such an optimal strategy.</p>
+<p>We will consider strategies that aim at epidemic mitigation rather than at eradication, as these have been the focus of the current discussions. Moreover, eradication of an emerging pathogen is difficult. For an emerging pathogen, the effective reproduction number $\mathcal{R}_e$ (the average number of new cases produced by each infectious individual prior to recovery) is often much bigger than 1 in the absence of control. To eradicate the disease, we must sustain $\mathcal{R}_e &lt; 1$ (so that each currently infectious person less than replaces themself) for sufficient time to eliminate all cases. That may not be feasible.</p>
+<p>Since this work focuses on interventions that are constrained to be short, limited in efficacy, or both, we will assume policymakers are aiming at mitigation – <a href="https://www.statnews.com/2020/03/11/flattening-curve-coronavirus/" target="_blank" rel="noopener">&ldquo;flattening the curve&rdquo;</a>.</p>
+<p>As such, our principal criterion for the success of an intervention will be <strong>minimizing the highest peak of the epidemic</strong>. The peak is the largest single quantity of infectious individuals at any one time. This quantity is critical because it is the point at which <a href="https://www.vox.com/science-and-health/2020/3/14/21179714/coronavirus-covid-19-hospital-beds-china" target="_blank" rel="noopener">hospital beds will be most in demand</a> and health services will be most strained. An overwhelmed system can dramatically increase case-fatality rates and lead to increased rates of complications from infection.</p>
+<p>All else equal, a policymaker would also like to minimize the <strong>total cases</strong> during the epidemic, but for an explosively spreading novel virus, this consideration is secondary. The costs of a healthcare system collapse are simply too high. What is more, among non-eradicative interventions, those that reduce the highest epidemic peak (almost) necessarily reduce the total case count (or &ldquo;final size&rdquo;) of the epidemic, though they may not do so as effectively as interventions specifically targeted at final size reduction rather than at peak reduction.</p>
+<p>To get some intuition for the points above, let&rsquo;s plot an the classic SIR (susceptible-infectious-recovered) model of an epidemic with COVID-like parameters, optimistically imagining that the healthcare system has a capacity to handle up to 20% of the population being infected at any one time.</p>
+<p><img src="output_4_1.svg" alt="svg"></p>
+<h2 id="goal-an-optimal-peak-reduction-strategy">Goal: an optimal peak reduction strategy</h2>
+<p>Given absolutely perfect and complete information, what would be the optimal single-shot strong intervention for reducing the height of the epidemic peak?</p>
+<p>The peak is achieved when the $\mathcal{R}_e = 1$; that is, when new infections exactly balance recoveries. This point can be hastened – and the number of infections at that point thereby reduced – if the number of susceptible individuals in the population is depleted. This is one benefit of vaccination, when possible. We can see this by starting our epidemic model with some portion of the population already immune:</p>
+<p><img src="output_6_1.svg" alt="svg"></p>
+<p>When infection and recovery brings with it immunity, as we <a href="http://dylanhmorris.com/post/immunity-primer/" target="_blank" rel="noopener">strongly suspect is the case for COVID-19</a>, the disease is eventually self-limiting. It runs out of susceptible individuals to infect. Locking down an epidemic too early and aggressively slows depletion of susceptibles. If controls are then relaxed too soon, there can be a large second epidemic peak, as we can see by modeling such an overly aggressive early reaction:</p>
+<p><img src="output_8_1.svg" alt="svg"></p>
+<p>When intervening, then, our aim should be to deplete susceptibles as rapidly as possible during the intervention while also limiting the growth of the number of infectious individuals. To model this, we first need to specifiy an epidemic model.</p>
+<h2 id="epidemic-model-sir">Epidemic model: SIR</h2>
+<p>For simplicity, we consider a classic susceptible-infectious-recovered (SIR) model. We keep track of the fractions of susceptible ($S$), infectious ($I$) and recovered ($R$) individuals in the population (so $S+I+R=1$). The rates of change of these fractions in time are given by a set of differential equations:</p>
+<p>$$\frac{dS}{dt} = -\beta SI$$</p>
+<p>$$\frac{dI}{dt} = \beta SI - \gamma I$$</p>
+<p>$$\frac{dR}{dt} = \gamma I$$</p>
+<p>Susceptible individuals in class $S$ are infected at a rate proportional to the current fraction of infectious individuals $I$ with a proportionality constant $\beta$. Infectious individuals recover at a rate $\gamma$ and are subsequently immune. On average, each infectious individual remains infectious for $\frac{1}{\gamma}$ time units and inoculates $\beta$ individuals during that time, of whom a fraction $S$ are susceptible and themselves become infected. This gives us a basic reproduction number $\mathcal{R}_0$ (the average number of inoculations caused by each infectious individual prior to recovery) of</p>
+<p>$$\mathcal{R}_0 = \frac{\beta}{\gamma}$$</p>
+<p>and an effective reproduction number $\mathcal{R}_e$ (the average number of successful infections caused by each infectious individual prior to recovery) of</p>
+<p>$$\mathcal{R}_e = \frac{\beta}{\gamma} S$$</p>
+<p>For simplicity, we ignore births and deaths. That said, net births and deaths do not meaningfully affect the epidemic dynamics for an epidemic propagating with the speed and the case-fatality rate of COVID-19.</p>
+<p>A reminder: COVID-19 is dangerous not so much because the overall case fatality rate is particularly high, but because it threatens to cause <em>so many cases</em> that even at a low case fatality rate, there will be substantial total mortality.</p>
+<h2 id="strategy">Strategy</h2>
+<p>Given this model and given limited amount of time $\tau$ for which we can intervene aggressively, we take the following strategy: intervene to tune $\beta$ continuously in time so that $\mathcal{R}_e(t) = (\beta(t)/\gamma) S(t)$ is held fixed at 1.</p>
+<p>This implies</p>
+<p>$$\beta(t) = \frac{\gamma}{S(t)}$$</p>
+<p>Because $\mathcal{R}_e(t)$ is held fixed at 1, $I(t)$ will remain fixed during the intervention at a value $I_i$. Susceptibles will be depleted at a rate $\gamma I_i$ (since we are holding $\mathcal{R}_e = 1$ and $\frac{dI}{dt} = 0$, we must have $\beta SI = \gamma I$).</p>
+<p>This strategy has thus has the effect of &ldquo;freezing&rdquo; the number of infectious individuals at some fixed level $I(t) = I_i$. We are able to deplete the pool of susceptible individuals rapidly while preventing the epidemic from growing further.</p>
+<p>Here is an example. We intervene when 15% percent of individuals in the population are infectious ($I_i = 0.15$).</p>
+<p><img src="output_14_1.svg" alt="svg"></p>
+<h2 id="remark-non-feasibility">Remark: (non)-feasibility</h2>
+<p>We note here that this would be an impossible strategy in practice. It requires continuous and instantaneous policy intervention to tune the value of $\beta$ to match the changing fraction of susceptibles $S(t)$. It also assumes that the value of $\beta$ can always feasibly be reduced to exactly $\frac{\gamma}{S(t)}$.</p>
+<p>Our aim in designing this strategy is to be as generous as possible in our estimates of the efficacy of a limited time intensive intervention. We will proceed to show that even an optimal intervention is extremely liable to failure if it is mistimed.</p>
+<h1 id="model-of-peak-reduction-via-intervention">Model of peak reduction via intervention</h1>
+<p>We now use this strategy with the aim of reducing $I_\text{max}$, the peak (largest) value of $I(t)$ during the epidemic.</p>
+<p>Suppose we start this intervention with some quantities $S_i$, $I_i$, and $R_i$ of susceptible, infectious and recovered individuals at a time $t_i$. Over the course of our intervention, $\frac{dS}{dt}$ will then be constant at a value:</p>
+<p>$$\frac{dS}{dt} = -\beta(t) S I_i = -\gamma I_i$$</p>
+<p>If we continue the intervention for $\tau$ units of time, then during the intervention we deplete a total number of susceptibles given by:</p>
+<p>$$\Delta S =  I_i \gamma\tau$$</p>
+<p>A <a href="http://mat.uab.cat/matmat/PDFv2013/v2013n03.pdf" target="_blank" rel="noopener">known result</a> in epidemiological theory holds that the maximum number of infectious individuals achieved during an SIR epidemic during the time window $t = t_x$ to $t = \infty$ is given by:</p>
+<p>$$I_\text{window max}(t_x) = I(t_x) + S(t_x) - \frac{1}{\mathcal{R}_0}\log\Big(S(t_x)\Big) - \frac{1}{\mathcal{R}_0} + \frac{1}{\mathcal{R}_0} \log\Big(\frac{1}{\mathcal{R}_0}\Big)$$</p>
+<p>The overall maximum is of course $I_\text{window max}(0)$, which we will call simply $I_\text{max}$.</p>
+<p>Denote by $I_\text{peak}$ the value of $I_\text{max}$ the absence of any intervention:</p>
+<p>$$I_\text{peak} = 1 - \frac{1}{\mathcal{R}_0} + \frac{1}{\mathcal{R}_0} \log\Big(\frac{1}{\mathcal{R}_0}\Big)$$</p>
+<p>By our assumptions about the intervention strategy:</p>
+<p>$$ I(t_i + \tau) = I_i$$</p>
+<p>$$S(t_i + \tau) = S_i - \Delta S $$</p>
+<p>So:
+$$I_\text{window max}(t_i + \tau) = I_i + S_i - \Delta S - \frac{1}{\mathcal{R}_0}\log\Big(S_i - \Delta S \Big) - \frac{1}{\mathcal{R}_0} + \frac{1}{\mathcal{R}_0} \log\Big(\frac{1}{\mathcal{R}_0}\Big)$$</p>
+<p>Maximizing susceptibles depleted during our intervention is crucial to reducing $I_\text{window max}(t_i + \tau)$ and thus reducing the overall $I_\text{max}$. It can be shown (see <a href="#technical-appendix">technical appendix</a> that an optimal interention will always have $I_\max = I_\text{window max}(t_i + \tau)$. That is the peak of the epidemic occurs after the intervention. The intuition is that if the peak occurs before or during the intervention, we should intervene either earlier, more strongly, or both.</p>
+<p>It can also be shown (see appendix) that when comparing two interventions that start at the same $I_i, S_i$ and end at the same $I_e$ the intervention that ends with lower $S_e$ will have lower $I_\text{window max}(t_i + \tau)$. Taken together, these two results give us some intuition: the strength of our intervention is in achieving the largest possible $\Delta S$ that does not permit the epidemic to <em>grow</em> during the intervention.</p>
+<h2 id="remark-dimensionality">Remark: dimensionality</h2>
+<p>This is a two-parameter model in terms of $\mathcal{R}_0$, the basic reproduction number of the disease, and the product $\gamma \tau$, the efficacy of the intervention, measured in terms of susceptibles removed per infectious individual.</p>
+<h1 id="optimizing-the-intervention-to-achieve-the-largest-possible-peak-reduction">Optimizing the intervention to achieve the largest possible peak reduction</h1>
+<p>Given $\tau$, $\mathcal{R}_0$, and $\gamma$, we can find an optimal point of intervention $I_i = I_\text{opt}$ that minimizes $I_\text{max}$.  Note that any optimal value of $I_i$ must satisfy $I_i \le I_\text{peak}$, otherwise we will simply have $I_{\max} = I_\text{peak}$, which is maximally suboptimal.</p>
+<p>How much better is the optimum intervention than suboptimal ones? How much better is it than doing nothing?</p>
+<p>We cannot solve this analytically (though it can be approximated), but it is also simple and illuminating to solve numerically for $I_\max(I_i)$  by integrating the SIR model first until $I(t) = I_i$, then integrating with our intervention (or simply calculating it) until $t = t_i + \tau$, and then integrating forward from there.</p>
+<p>As noted, we show in the appendix that an optimal intervention will always permit some degree of post-intervention peak. Infections will rise (though often very briefly) after the intervention ceases to a much-reduced peak $I_\text{max}$, and then fall.</p>
+<p>In the interest of rapid respsonse, we have not performed or visualized broad parameter sweeps. But the interested reader can run the code in the provided <a href="http://dylanhmorris.com/files/mistimed_intervention.ipynb" target="_blank" rel="noopener">Jupyter notebook</a> for themself and see that the qualitative effects we find are extremely robust to variation in parameters.</p>
+<h1 id="how-many-infections-should-we-allow-before-intervention-in-order-to-minimize-the-peak">How many infections should we allow before intervention in order to minimize the peak?</h1>
+<p>We calculate and plot $I_\text{max}$ as a function of $I_i$: the number of infectious individuals when we intervene. We see that there is a clear optimal value of $I_i$, which we call $I_\text{opt}$. Intervening at $I_\text{opt}$ minimizes the value of $I_\text{max}$.</p>
+<p><img src="output_20_1.svg" alt="svg"></p>
+<p>We see from this figure that if $I_i$ is very small or very large, $I_\max$ gets close to the non-intervention case of $I_\text{peak}$, but with $I_i$ chosen well, reasonably large reductions versus $I_\text{peak}$ can be achieved (even for the moderate value of $\tau = 21$ days used here to achieve $\gamma \tau = 1.5$). Each set of parameters implies an optimal value $I_\text{opt}$ that minimizes $I_\text{max}$.</p>
+<p>We also see that interventions are less effective if $\gamma \tau$ is reduced, as seen in the plots where $\gamma \tau = 0.4$.</p>
+<h1 id="the-problem-of-timing">The problem of timing</h1>
+<p>Our optimized time-limited intensive intervention is extremely powerful. At $\mathcal{R}_0 = 3$, for example, a 21-day intervention can reduce the peak prevalence from about 30% of the population to under 20%. That is a massive and potentially health system-saving reduction.</p>
+<p>But interventions are not automatically triggered by the achievement of a certain number of infectious individuals. They are made by human beings, who must estimate the value of $I_i$ (often from very limited data), must begin rollout of an intervention without certainty about how long the rollout will take, and will have imperfect estimates of the epidemiological parameters, leading them to misjudge what the value of $I_i$ even is.</p>
+<p>Indeed, the COVID-19 outbreak has highlighted how difficult real-time epidemiological inference can be. Large numbers of <a href="https://science.sciencemag.org/content/early/2020/03/13/science.abb3221.abstract" target="_blank" rel="noopener">asymptomatic and midly symptomatic cases</a>, as well as <a href="https://www.newyorker.com/news/news-desk/what-went-wrong-with-coronavirus-testing-in-the-us" target="_blank" rel="noopener">difficulties with testing</a>, have left us with substantial uncertainty as to the number of current cases in many countries.</p>
+<p>All of these things mean that even if we grant our policymaker the capacity to tune $\beta$ instanteously and with infinite precision so as maintain optimal intervention, the policymaker will still intervene with some error. Our true $t_i$ will be either greater or smaller than $t_\text{opt}$. We shall assume that this occurs with equal probability, though there are many reasons to believe that lateness might be more common than earliness (political and regulatory difficulties involved in intervening, delays to implementation once the go signal is given, and so on).</p>
+<p>How costly is mistiming a time-limited intervention, as a function of how far off you are from the optimal time $t_\text{opt}$? Some numerical work reveals that an error of just a single week can be enormously costly.</p>
+<h2 id="a-visualization-of-the-problem-of-timing">A visualization of the problem of timing</h2>
+<p>We plot a figure showing the timecourse of the epidemic with COVID-like parameters ($\mathcal{R}_0$ = 3, $\gamma = 1/14$), without intervention, with perfect intervention, and with mistimed intervention. We intervene for $\tau = 21$ days:</p>
+<p><img src="output_29_1.svg" alt="svg"></p>
+<p>We see here that while the optimal intervention achieves a dramatic reduction in the height of the peak, mistiming the intervention can be disastrous. Intervening too early does indeed produce a resurgent peak, but it is substantially worse to intervene too late. With a one week late intervention, the $I_\text{max}$ is barely reduced relative to $I_{\max}$ in the absence of any intervention.</p>
+<p>The extreme costs of mistiming derive from the steepness of the exponential growth curve. Intensive time-limited interventions require a large number of infectious individuals to be present if they are to deplete susceptibles effectively. That means that $t_\text{opt}$ occurs near the point of maximally rapid exponential growth.</p>
+<p>The problem with this is intuitive: the $I(t)$ curve is extremely steep at $t_\text{opt}$, and so small errors in timing produce large errors in terms of $I(t)$. But the error is also asymmetric: being late is costlier than being early. The early intervention is strongly suboptimal and allows a large resurgence, but that resurgence is still slower and smaller (thanks to susceptible depletion) than the prolonged uncontrolled growth period that is permitted by a late intervention.</p>
+<h1 id="a-less-risky-more-robust-strategy-continuous-control">A less risky, more robust strategy: continuous control</h1>
+<p>Time-limited intensive interventions are appealing to policymakers because they are efficient. For COVID-19-like parameters, a dramatic reduction in the peak epidemic prevalence $I_{\max}$ can be achieved with only a few weeks' worth of major economic and social impact. It is understandable that the policymakers should wish to optimize in this way. Continuous control measures that act to reduce $\beta$ and thus $\mathcal{R}_0$ for a longer period will clearly be less efficient and more costly.</p>
+<p>Our analysis reveals a major flaw with this reasoning: time-limited intensive interventions are not robust to mistiming. Let us now consider a continuous control approach that reduces $\beta$ and thus $\mathcal{R}_0$ by 25%. We will first consider the value of that approach in itself, and then see what is achievable if you layer an intensive intervention – whether well-timed or mistimed – on top of the continuous control efforts.</p>
+<p>Note that reducing $\beta$ by approximately 25% is feasible if costly in the real world – for instance via banning large gatherings, closing restaurants, nightclubs, schools, and sporting venues – whereas tuning $\beta(t)$ to hold $\mathcal{R}_e$ at 1 is, once again, a steelman: an impossibly perfect version of an intensive intervention.</p>
+<p>We first calculate our continuous control results, with and without an additional intensive interaction. We implement a continuous control strategy that reduces $\beta$ by 25% (not in practice that large a reduction). This could represent a number of control strategies that reduce disease-causing contacts and thus decrease $\beta$, for instance <a href="http://www.cidrap.umn.edu/sites/default/files/public/php/185/185_factsheet_social_distancing.pdf" target="_blank" rel="noopener">social distancing</a>. As before, $\mathcal{R}_0 = 3$, $\gamma = 1/14$, $\tau = 21$.</p>
+<p><img src="output_34_0.svg" alt="svg"></p>
+<p>In the lefthand plot, we recap our earlier result: being early, or, especially late by even a few days (as plotted: one week) produces a much higher peak. Being a week late is almost as destructive as doing nothing.</p>
+<p>With continuous control, the peak is reduced, but at higher social cost. Moreover, for our parameters, it actually achieves less reduction in $I_{\max}$ than could be achieved with an optimal intensive short intervention: the peak of the thick orange curve on the left is in fact lower than the peak of blue dashed curve on the right. But the risk of a mistimed intervention no longer exists.</p>
+<p>Moreover, if an intensive intervention remains possible, continuous control also reduces the cost of mistiming that intensive intervention, and makes the intensive intervention strategy itself more robust to mistiming. This occurs for a very simple reason: the steepness of the exponential has been flattened, so timing errors are less devastating.</p>
+<h2 id="continuous-control-becomes-more-appealing-as-potential-timing-errors-become-larger">Continuous control becomes more appealing as potential timing errors become larger</h2>
+<p>To assess efficacy of continuous control versus optimally and mistimed interventions, we plot the difference between $I_{\max}$ with an intensive, time-limited intervention and $I_{max}$ with continuous control as a function of how offset (early or late) the intensive intervention is from the optimal time $t_{opt}$.</p>
+<p><img src="output_39_1.svg" alt="svg"></p>
+<p>When an intensive intervention is taken sufficiently close to $t_{opt}$, it achieves a lower peak than continuous control (and by assumption this comes at a dramatically reduced social cost relative to continuous control). But relying only on the intensive intervention is not at all robust to timing errors. The intensive intervention produces a substantially higher peak than continuous control (an additional 7% of the total population) if it comes even a week late.</p>
+<h2 id="in-addition-to-its-intrinsic-benefits-continous-control-turns-intensive-intervention-into-a-more-robust-strategy">In addition to its intrinsic benefits, continous control turns intensive intervention into a more robust strategy</h2>
+<p>As we saw in the timecourse plot, it appears that continuous control, in addition to its own greater robustness, also increases the robustness of any intensive intervention that is layered on top of it. To quantify this, we plot the reduction in $I_{\max}$ achieved by an intensive intervention alone relative to the $I_{\max}$ with no control, and the reduction in $I_{\max}$ achieved by an intensive intervention layered on top of continuous control relative to $I_{\max}$ achieved by continuous control alone.</p>
+<p><img src="output_42_1.svg" alt="svg"></p>
+<p>How much does the time-limited intensive intervention reduce $I_\max$ versus no intensive intervention, given how far $t_i$ is from $t_{opt}$? We look at this for the intensive only case (red line), where the baseline $I_\max$ is simply $I_\text{peak}$, and for the continuous control case, where the baseline is continuous control without an additional time-limited intensive interaction. For a sufficient degree of mismatch / offset from $t_\text{opt}$, an intensive interaction is in fact more beneficial in terms of raw averted peak cases than it is in the only intensive case.</p>
+<p>Because continuous control alone already reduces the peak relative to doing nothing, this relative measure quantifies <em>the additional robustness benefit that continuous control affords, above and beyond beyond its peak-lowering benefits.</em></p>
+<h2 id="robustness-makes-continuous-control-worth-the-extra-effort">Robustness makes continuous control worth the extra effort</h2>
+<p>We can visualize the benefit of continuous control&rsquo;s additional robustness to error by quantifying how much lower $I_{\max}$ is with continuous control and a mistimed intensive intervention versus $I_{\max}$ without continuous control and an equally mistimed intensive intervention.</p>
+<p><img src="output_45_1.svg" alt="svg"></p>
+<p>Here we see the difference in $I_\max$ for time-limited interventions in the presence and absence of continuous control, plotted as the difference between $I_\max$ for only the time-limited intervention and $I_\max$ for the time-limited intervention with continuous control, for a range of possible offsets from $t_\text{opt}$. The optimal time-limited intervention achieves almost as good a result by itself as continuous control <em>plus</em> optimal time-limited intervention can do put together. But when there is a mistiming, especially when one is too late, the continuous control outcome is substantially superior.</p>
+<h1 id="discussion">Discussion</h1>
+<p>We have seen here that there is a reason to find time-limited intensive interventions quite attractive in theory. Performed optimally, they can achieve dramatic results in very limited time (our default plotted $\tau$ was only 21 days, or three weeks). To a policymaker looking to minimize social and economic disruption during disease control, swallowing such a bitter pill but otherwise being able to maintain business as usual might seem extremely attractive.</p>
+<p>But we have also seen the costs that hyperoptimization can bring in practice. We made life very easy for our theoretical policymaker. They were given a magic wand that they could use to tune $\beta(t)$ instantaneously and with perfect precision. They were given perfect information on the values of $\mathcal{R}_0$, $\gamma$, and $\tau$, thus allowing them to calculate $t_\text{opt}$ exactly. Their only constraint was that they had to choose exactly when to reach for and start using their magic wand. We show that if they start using the wand even a week too early or too late, consequences are severe – and especially severe if they are late.</p>
+<p>And there are all manner of reasons that our policymaker could miss $t_\text{opt}$ even granting that the underlying epidemiological parameters are perfectly known. For example, one must estimate the current number of cases $I(t)$ in order to know the effective value of $t$ itself, and thus how far away $t_\text{opt}$ is. One must also introduce and enforce control measures – full compliance could easily take longer to achieve than planned, especially given <a href="https://en.wikipedia.org/wiki/Hofstadter%27s_law" target="_blank" rel="noopener">Hofstadter&rsquo;s law</a>:</p>
+<blockquote>
+<p>&ldquo;Hofstadter&rsquo;s Law: It always takes longer than you expect, even when you take into account Hofstadter&rsquo;s Law.&rdquo; – Douglas Hofstadter</p>
+</blockquote>
+<p>For respiratory viruses, another concern is that $\beta$ is not truly fixed in time even in the absence of intervention. $\beta$ for a respiratory virus tends to exhibit &ldquo;seasonality&rdquo;: rising in temperate zone winters, falling in temperate zone summers. Influenza is the classic example: the Northern Hemisphere has a winter &ldquo;flu season&rdquo;.</p>
+<p>There is some reason to suspect that COVID-19 could behave similarly. A policymaker looking at the current COVID-19 epidemic might want to keep powder dry for a second peak in the winter, trusting seasonality to take care of flattening the curve during the summer. In future work, we may model this explicitly, but for now we note that anticipating a seasonal drop in $\beta$ that fails to occur – and therefore intervening late – corresponds qualitatively to intervening later than $t_\text{opt}$. As such, it could be very costly.</p>
+<h1 id="conclusion">Conclusion</h1>
+<p>In short, limited-time intensive interventions, performed optimally, are indeed extremely effective and efficient ways to reduce the peak of an epidemic. But they are not robust to implementation error, and that is reason to rethink their use, particularly when armed with incomplete information and combating a novel, poorly understood disease.</p>
+<h1 id="manuscript">Manuscript</h1>
+<p>We are working to turn this blog post into a manuscript, in which we plan to expand this analysis somewhat. We will conduct more parameter sensitivity analysis, consider the costs and robustness (or lack thereof) for other kinds of mistakes in intervention (such as incorrectly estimating $\beta$), and consider the effects of interventions on epidemic final sizes as well as on epidemic peak prevalence. In the interim, we welcome comments and critiques.</p>
+<h1 id="code-availability">Code availability</h1>
+<p>The Jupyter notebook used to generate this blog post is <a href="http://dylanhmorris.com/files/mistimed_intervention.ipynb" target="_blank" rel="noopener">available for download in its raw form</a>, so that the interested reader can reproduce the analysis, vary parameters, et cetera. As we intend to write this work up as a manuscript, however, we are for the moment not licensing the text and code for public reuse and redistribution.</p>
+<h1 id="acknowledgments">Acknowledgments</h1>
+<p>We thank Ada W. Yan, Amandine Gamble, Elizabeth N. Blackmore, James O. Lloyd-Smith, and Joshua B. Plotkin for helpful comments on previous of drafts of this post. We thank Simon A. Levin, Corina E. Tarnita, and Juan Bonachela for helpful discussions.</p>
+<p><a id="technical-appendix"></a></p>
+<h1 id="technical-appendix">Technical appendix</h1>
+<p>Here we provide some technical results for the interested reader.</p>
+<h3 id="theorem-among-two-interventions-that-end-with-the-same-number-of-infecteds-and-with-s_e-ge-s_textcrit--frac1mathcalr_0-the-intervention-that-leaves-fewer-susceptibles-has-lower-s_e-ge-s_textcrit-is-superior-for-reducing-i_textwindow-maxt_i--tau">Theorem: among two interventions that end with the same number of infecteds and with $S_e \ge S_\text{crit} = \frac{1}{\mathcal{R}_0}$, the intervention that leaves fewer susceptibles (has lower $S_e \ge S_\text{crit}$) is superior for reducing $I_\text{window max}(t_i + \tau)$.</h3>
+<p>Consider the expression for $I_\text{window max}(t_i + \tau)$.</p>
+<p>$$I_\text{window max}(t_i + \tau) = I_e + S_e - \frac{1}{\mathcal{R}_0} \log(S_e) + \text{const. terms}$$</p>
+<p>Suppose intervention $x$ ends with $S_{ex}, I_{e}$ and intervention $y$ with $S_{ey}, I_{e}$, such that $S_{ey} &lt; S_{ex}$. Differentiating shows that, fixing $I_e$, $I_\text{window max}(t_i + \tau)$ is an increasing function of $S_e$ on the interval $S_e \in [S_\text{crit}, 1]$. So since the $I_e$ terms are equal and $S_e \ge S_\text{crit}$, our result must hold.</p>
+<h3 id="theorem-if-an-intervention-is-optimal-i_max-will-be-achieved-after-the-intervention-that-is-if-i_p-is-the-maximum-value-of-i-before-or-during-the-intervention-i_max-ge-i_p">Theorem: if an intervention is optimal, $I_\max$ will be achieved after the intervention (That is, if $I_p$ is the maximum value of $I$ before or during the intervention, $I_\max \ge I_p$).</h3>
+<p>$I_\max$ cannot occur before the intervention begins for an optimal intervention, as that implies that the epidemic is already shrinking when the intervention begins and will never grow again, regardless of the intervention approach (since $\beta(t) \le \mathcal{R}_0 \gamma$, we cannot force a declining epidemic to grow). That implies $I_\max = I_\text{peak}$, which we can with certainty improve upon. So $I_\max$ must occur during or after the intervention.</p>
+<p>Now suppose a strategy $x$ has some largest value $I_{px} = I_\max$ of $I_x(t)$ during the intervention at a time $t_{px}$. Consider a strategy $y$ that takes $\beta_y(t) = \beta_x(t)$ except in a window $t_{px} - \delta_1 &lt; t &lt; t_{px}$, when we set $\beta_y(t) = \beta_x(t) - \delta_2$. By choosing $\delta_1, \delta_2$ small enough, then for any $\epsilon &gt; 0$, we can ensure $I_{py} &lt; I_{px}$ while keeping $S_{py} - S_{px}$ and $I_{py} - I_{px}$ both $&lt; \epsilon$. Since this only marginally increases $I_\text{window max}(t_i + \tau)$ (as $I_\text{window max}(t_i + \tau)$ is a continuous function of $I_e$ and $S_e$), then by continuity we can iterate this process to obtain a reduction in $I_\max$ until $I_\max$ occurs after the intervention; we continuously decrease $I_p$ and increase $I_\text{window max}(t_i + \tau)$.</p>
+<p>There is one edge case in which we cannot apply this strategy: an intervention that has $I_p = I_i$. Suppose $I_p = I_i = I_\max$ for a strategy $x$. We improve upon it by choosing $t_{iy} = t_{ix} - \delta$, and then setting $\beta_y(t) = \beta_x(t + \delta)$. We obtain a reduction in $I_p$ at the cost of a continuous increase in $S_e$, thus again trading off a reduction in $I_\max = I_p$ against an increase in $I_\text{window max}(t_i + \tau)$. As before, we can iterate this to obtain an improvement until $I_\max$ occurs after the intervention.</p>
+<p><strong>Corollary:</strong> $S_e &gt; S_\text{crit}$ for any optimal intervention, otherwise $I_p$ would be $I_\max$.</p>
+<h3 id="technical-note-suboptimal-interventions-and-beta--mathcalr_0-gamma">Technical note: suboptimal interventions and $\beta &gt; \mathcal{R}_0 \gamma$</h3>
+<p>While an optimal intervention will never reach $S_\text{crit}$, a suboptimal intervention, with $I_i$ too large, might do so. In that case, our strategy for choosing $\beta$ to maximize the rate of susceptible depletion would involve actually _raising_ $\beta$ above what its value would be in the absence of intervention (since $\mathcal{R}_0 \gamma &lt; \frac{\gamma}{S(t)}$ when $S(t) &lt; \frac{1}{\mathcal{R}_0} = S_\text{crit}$). This is a bit illogical, and might not even be feasible (and breaks the assumptions the prove optimal).</p>
+<p>For this reason, we assume that $\beta(t)$ during an intervention is given by the smaller of the raw $\beta = \mathcal{R}_0 \gamma$ and $\beta(t) = \frac{\gamma}{S(t)}$. In other words, intervention necessarily ceases when $S_\text{crit}$ is reached, even if $t &lt; t &lt; t_i + \tau$.</p>
+
+    </div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+      
+      <a href="/"><img class="avatar mr-3 avatar-circle" src="/authors/dylan/avatar_hu262700c8adb2b3cc823710650a4933cf_24093_270x270_fill_q90_lanczos_center.jpg" alt="Dylan H. Morris"></a>
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="/">Dylan H. Morris</a></h5>
+      <h6 class="card-subtitle">Postdoctoral Researcher, Ecology &amp; Evolutionary Biology</h6>
+      <p class="card-text">I&rsquo;m a Postdoctoral Researcher in Ecology &amp; Evolutionary Biology interested in mathematical biology, virus ecology and evolution, and population genetics</p>
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="/#contact" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://twitter.com/dylanhmorris" target="_blank" rel="noopener">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://scholar.google.com/citations?user=YrX1Z8MAAAAJ" target="_blank" rel="noopener">
+        <i class="ai ai-google-scholar"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/dylanhmorris" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="/files/cv.pdf" >
+        <i class="ai ai-cv"></i>
+      </a>
+    </li>
+  
+</ul>
+
+    </div>
+  </div>
+
+
+  
+    
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+</article>
+  </div>
+
+  <div class="page-footer">
+    
+    
+    <div class="container">
+      <footer class="site-footer">
+
+  
+
+  
+
+  
+  <p class="powered-by">
+    © 2021 Dylan H. Morris
+  </p>
+  
+
+  
+  
+
+
+
+
+
+
+  <p class="powered-by">
+    
+    
+    
+      
+      
+      
+      
+      
+      
+      Published with <a href="https://wowchemy.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Wowchemy</a> — the free, <a href="https://github.com/wowchemy/wowchemy-hugo-modules" target="_blank" rel="noopener">open source</a> website builder that empowers creators.
+    
+  </p>
+</footer>
+
+    </div>
+    
+  </div>
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/instant.page/5.1.0/instantpage.min.js" integrity="sha512-1+qUtKoh9XZW7j+6LhRMAyOrgSQKenQ4mluTR+cvxXjP1Z54RxZuzstR/H9kgPXQsVB8IW7DMDFUJpzLjvhGSQ==" crossorigin="anonymous"></script>
+
+      
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.8.4/mermaid.min.js" integrity="sha512-as1BF4+iHZ3BVO6LLDQ7zrbvTXM+c/1iZ1qII/c3c4L8Rn5tHLpFUtpaEtBNS92f+xGsCzsD7b62XP3XYap6oA==" crossorigin="anonymous" title="mermaid"></script>
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/highlight.min.js" integrity="sha512-TDKKr+IvoqZnPzc3l35hdjpHD0m+b2EC2SrLEgKDRWpxf2rFCxemkgvJ5kfU48ip+Y+m2XVKyOCD85ybtlZDmw==" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/r.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/python.min.js"></script>
+        
+      
+
+    
+
+    
+    
+    
+
+    
+    
+
+    
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    <script src="/js/bootstrap.bundle.min.6aed84840afc03ab4d5750157f69c120.js"></script>
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <script src="/en/js/wowchemy.min.163b8d9708d5ac450497c0142c0dad35.js"></script>
+
+    
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Publications and preprints | Dylan H. Morris</title>
+    <link>/publication/</link>
+      <atom:link href="/publication/index.xml" rel="self" type="application/rss+xml" />
+    <description>Publications and preprints</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2021 Dylan H. Morris</copyright>
+    <image>
+      <url>/media/icon_hu7d07f536adf3b1452f2fe0496f8451a4_144055_512x512_fill_lanczos_center_2.png</url>
+      <title>Publications and preprints</title>
+      <link>/publication/</link>
+    </image>
+    
+    <item>
+      <title>Optimal, near-optimal, and robust epidemic control</title>
+      <link>/publication/morris-2021-optimal/</link>
+      <pubDate>Thu, 01 Apr 2021 00:00:00 +0000</pubDate>
+      <guid>/publication/morris-2021-optimal/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Asynchrony between virus diversity and antibody selection limits influenza virus evolution</title>
+      <link>/publication/morris-2020-asynchrony/</link>
+      <pubDate>Sun, 01 Nov 2020 00:00:00 +0000</pubDate>
+      <guid>/publication/morris-2020-asynchrony/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Effectiveness of N95 Respirator Decontamination and Reuse against SARS-CoV-2 Virus</title>
+      <link>/publication/fischer-2020-n-95/</link>
+      <pubDate>Tue, 01 Sep 2020 00:00:00 +0000</pubDate>
+      <guid>/publication/fischer-2020-n-95/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Heat-treated virus inactivation rate depends strongly on treatment procedure</title>
+      <link>/publication/gamble-2020-heat/</link>
+      <pubDate>Sat, 01 Aug 2020 00:00:00 +0000</pubDate>
+      <guid>/publication/gamble-2020-heat/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mathematical models to guide pandemic response</title>
+      <link>/publication/metcalf-2020-mathematical/</link>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
+      <guid>/publication/metcalf-2020-mathematical/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The impact of climate and antigenic evolution on seasonal influenza virus epidemics in Australia</title>
+      <link>/publication/lam-2019-climate/</link>
+      <pubDate>Mon, 01 Jun 2020 00:00:00 +0000</pubDate>
+      <guid>/publication/lam-2019-climate/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Wild hummingbirds discriminate nonspectral colors</title>
+      <link>/publication/stoddard-2020-wild/</link>
+      <pubDate>Mon, 01 Jun 2020 00:00:00 +0000</pubDate>
+      <guid>/publication/stoddard-2020-wild/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Aerosol and Surface Stability of SARS-CoV-2 as Compared with SARS-CoV-1</title>
+      <link>/publication/vandoremalen-2020-stability/</link>
+      <pubDate>Wed, 01 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>/publication/vandoremalen-2020-stability/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A social dilemma of sociality: beneficial and costly contagion</title>
+      <link>/publication/morris-2020-sociality/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>/publication/morris-2020-sociality/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
