@@ -5,12 +5,20 @@
     <link>/authors/kwe-claude-yinda/</link>
       <atom:link href="/authors/kwe-claude-yinda/index.xml" rel="self" type="application/rss+xml" />
     <description>Kwe Claude Yinda</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2021 Dylan H. Morris</copyright><lastBuildDate>Sat, 01 Aug 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2021 Dylan H. Morris</copyright><lastBuildDate>Fri, 01 Jan 2021 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/media/icon_hu7d07f536adf3b1452f2fe0496f8451a4_144055_512x512_fill_lanczos_center_2.png</url>
       <title>Kwe Claude Yinda</title>
       <link>/authors/kwe-claude-yinda/</link>
     </image>
+    
+    <item>
+      <title>Mechanistic theory predicts the effects of temperature and humidity on inactivation of SARS-CoV-2 and other enveloped viruses</title>
+      <link>/publication/morris-2021-mechanitic/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>/publication/morris-2021-mechanitic/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Heat-treated virus inactivation rate depends strongly on treatment procedure</title>

@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Daniel B. Cooney | Dylan H. Morris</title>
-    <link>/authors/daniel-b.-cooney/</link>
-      <atom:link href="/authors/daniel-b.-cooney/index.xml" rel="self" type="application/rss+xml" />
-    <description>Daniel B. Cooney</description>
+    <title>Linsey C. Marr | Dylan H. Morris</title>
+    <link>/authors/linsey-c.-marr/</link>
+      <atom:link href="/authors/linsey-c.-marr/index.xml" rel="self" type="application/rss+xml" />
+    <description>Linsey C. Marr</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2021 Dylan H. Morris</copyright><lastBuildDate>Fri, 01 Jan 2021 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/media/icon_hu7d07f536adf3b1452f2fe0496f8451a4_144055_512x512_fill_lanczos_center_2.png</url>
-      <title>Daniel B. Cooney</title>
-      <link>/authors/daniel-b.-cooney/</link>
+      <title>Linsey C. Marr</title>
+      <link>/authors/linsey-c.-marr/</link>
     </image>
     
     <item>
-      <title>A social dilemma of sociality: beneficial and costly contagion</title>
-      <link>/publication/morris-2020-sociality/</link>
+      <title>Mechanistic theory predicts the effects of temperature and humidity on inactivation of SARS-CoV-2 and other enveloped viruses</title>
+      <link>/publication/morris-2021-mechanitic/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>/publication/morris-2020-sociality/</guid>
+      <guid>/publication/morris-2021-mechanitic/</guid>
       <description></description>
     </item>
     
