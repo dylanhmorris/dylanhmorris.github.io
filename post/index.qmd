@@ -1,0 +1,14 @@
+---
+title: "Blog posts"
+listing:
+  - id: blog-posts
+    contents: .
+    type: default
+    fields: [image, title]
+    sort: "date desc"
+    sort-ui: false
+    filter-ui: false
+    image-height: 15em
+    image-align: left
+
+---

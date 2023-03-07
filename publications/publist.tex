@@ -1,0 +1,100 @@
+\documentclass[margin, line]{res}
+
+\usepackage{color}
+\definecolor{linkcolor}{RGB}{58,110,180}
+\usepackage[terseinits = true, defernumbers = true, maxbibnames = 15]{biblatex}
+% specify publications file
+\addbibresource{publications.bib}
+
+
+% various biblatex styling
+\renewbibmacro{in:}{}
+\DeclareFieldFormat{labelnumber}{\textbullet}
+\DeclareFieldFormat{labelnumberwidth}{#1}
+
+
+\renewcommand*{\mkbibnamefamily}[1]{%
+  \ifitemannotation{cofirst}
+    {\textbf{#1}\textsuperscript{*}}
+  {\ifitemannotation{highlight}
+    {\textbf{#1}}
+    {#1}}
+    }
+
+\renewcommand*{\mkbibnamegiven}[1]{%
+  \ifitemannotation{cofirst}
+    {\textbf{#1}}
+  {\ifitemannotation{highlight}
+    {\textbf{#1}}
+    {#1}}
+    }
+
+% sort by month as well as year
+\DeclareSortingTemplate{dymdt}{
+  \sort{
+    \field{presort}
+  }
+  \sort[final]{
+    \field{sortkey}
+  }
+  \sort[direction=descending]{
+    \field{sortyear}
+    \field{year}
+    \literal{9999}
+  }
+  \sort[direction=descending]{
+    \field[padside=left,padwidth=2,padchar=0]{month}
+    \literal{99}
+  }
+  \sort[direction=descending]{
+    \field[padside=left,padwidth=2,padchar=0]{day}
+    \literal{99}
+  }
+  \sort{
+    \field{sorttitle}
+  }
+  \sort[direction=descending]{
+    \field[padside=left,padwidth=4,padchar=0]{volume}
+    \literal{9999}
+  }
+}
+
+\usepackage{hyperref}
+\hypersetup{
+  pdfborder={0 0 0 0},
+  colorlinks=true,
+  urlcolor=linkcolor
+}
+
+
+% Change some fonts
+\renewcommand{\namefont}{\LARGE\emph}
+\renewcommand{\sectionfont}{\large\bf\sc}
+
+% Margins, spacing, etc.
+\topmargin -.3in
+\oddsidemargin -.5in
+\evensidemargin -.5in
+\textwidth=6.0in
+\textheight=9.6in
+\itemsep=0in
+\parsep=0in
+\pagestyle{plain}  % Do want page numbers
+
+\begin{document}
+%print all entries in publications file
+\newrefcontext[sorting = dymdt]
+\nocite{*}
+
+\section{Publications and preprints}
+
+See also publication list on \href{https://scholar.google.com/citations?hl=en&user=YrX1Z8MAAAAJ}{Google Scholar}.
+
+* denotes joint first author \newline
+
+\printbibliography[heading = none, type = article]
+
+\section{Manuscripts}
+\printbibliography[heading = none, keyword = prep]
+
+\end{document}
