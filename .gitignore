@@ -10,3 +10,6 @@
 
 # build
 _site
+
+# dependencies
+_extensions

@@ -5,18 +5,16 @@ about:
   template: trestles
   image: images/profile-image.jpg
   links:
+    - text: "{{< ai google-scholar >}} Google Scholar"
+      href: https://scholar.google.com/citations?user=YrX1Z8MAAAAJ&hl=en
+    - text: "{{< ai orcid >}} ORCID"
+      href: https://orcid.org/0000-0002-3655-406X
     - icon: github
       text: Github
       href: https://github.com/dylanhmorris
     - icon: mastodon
       text: Mastodon
       href: https://ecoevo.social/@dylanhmorris
-    - icon: google-scholar
-      text: Google Scholar
-      href: https://scholar.google.com/citations?user=YrX1Z8MAAAAJ&hl=en
-    - icon: orcid
-      text: ORCID
-      href: https://orcid.org/0000-0002-3655-406X
 
 ---
 
@@ -24,4 +22,4 @@ I am a Postdoctoral Researcher at UCLA in the lab of [Jamie Lloyd-Smith](https:/
 
 Additional research interests include developing Bayesian statistical and computational methods for quantitative virology, immunology, and population biology and understanding the mechanisms by which host environment (temperature, humidity, ventilation, etc) affect virus transmission. 
 
-I obtained my PhD in Ecology and Evolutionary Biology from Princeton University, where I was advised by [Simon A. Levin](https://slevin.princeton.edu/). 
+I obtained my PhD in Ecology and Evolutionary Biology from Princeton University, where I was advised by [Simon A. Levin](https://slevin.princeton.edu/).
