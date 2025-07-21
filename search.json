@@ -1,0 +1,58 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Dylan H. Morris",
+    "section": "",
+    "text": "I am Team Lead for Short-Term Forecasting at the Center for Forecasting and Outbreak Analytics (CFA) within the U.S. CDC. My team develops quantitative models to monitor and project infectious disease dynamics. Much of our modeling work is public and open-source. You can find our projects and others on GitHub within the CDCGov organization.\nPreviously, I was a postdoctoral researcher at UCLA in the lab of Jamie Lloyd-Smith. I obtained my PhD in Ecology and Evolutionary Biology from Princeton University, where I was advised by Simon A. Levin."
+  },
+  {
+    "objectID": "post/index.html",
+    "href": "post/index.html",
+    "title": "Blog posts",
+    "section": "",
+    "text": "SARS-CoV-2 can be transmitted by aerosols\n\n\nHow we know and why we should have known sooner\n\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "contact/index.html",
+    "href": "contact/index.html",
+    "title": "Contact",
+    "section": "",
+    "text": "Submit the form below to contact me.\n\n\nName  Email Address  Message"
+  },
+  {
+    "objectID": "post/aerosols/index.html",
+    "href": "post/aerosols/index.html",
+    "title": "SARS-CoV-2 can be transmitted by aerosols",
+    "section": "",
+    "text": "This pandemic should upend how biologists think about virus transmission—for the better. Aerosol spread of SARS-CoV-2 happens. Many respiratory viruses are likely capable of aerosol spread. It has taken the public health community—particularly outside of East Asia—far too long to recognize this. Much of this comes from a longstanding dogma in infectious disease biology that large ballistic respiratory particles (“droplets”) are the main drivers of transmission for most respiratory viruses, with a few notable exceptions like measles.\nMy own greatest regret is having parroted this received wisdom early on. When interviewed about a paper I co-authored on aerosol and surface stability of SARS-CoV-2, I said that our aerosol stability findings were important for healthcare settings, but I added that there was “currently no evidence” that everyday people in everyday settings needed to worry about aerosol spread.\nI publicly changed my tune after the Skagit choir cluster, which I saw—and still see—as strong evidence:"
+  },
+  {
+    "objectID": "post/aerosols/index.html#mechanisms-and-evidence",
+    "href": "post/aerosols/index.html#mechanisms-and-evidence",
+    "title": "SARS-CoV-2 can be transmitted by aerosols",
+    "section": "mechanisms and evidence",
+    "text": "mechanisms and evidence\nIn my work, I make mechanistic mathematical models of biological systems. Experiments are an important part of science, but so are theory, mechanisms, and models. We can often draw strong inferences from known physics, chemistry, and biology before we even do a new experiment.\nAnd there, there was evidence, even before Skagit. People produce small respiratory particles when talking, breathing, and singing. Respiratory virus virions can be found within them. This alone means that we should not rule out aerosol transmission in everyday settings.\nI didn’t know these facts. I suspect many biologists and many doctors didn’t. I learned them from Prof. Linsey Marr and her many excellent colleagues in aerosol science and air quality research."
+  },
+  {
+    "objectID": "post/aerosols/index.html#the-aerosols-means-measles-fallacy",
+    "href": "post/aerosols/index.html#the-aerosols-means-measles-fallacy",
+    "title": "SARS-CoV-2 can be transmitted by aerosols",
+    "section": "the “aerosols means measles” fallacy",
+    "text": "the “aerosols means measles” fallacy\nOnce you have that key mechanistic insight, most of the arguments against aerosol spread fall to pieces. My (least) favorite is what I call the “aerosols-means-measles” fallacy: that if a disease is capable of aerosol-driven transmission, it will be extremely transmissible à la measles. But there are many ways for infectious diseases to differ in transmissibility besides principal route of transmission. People who think flu and SARS-CoV-2 are both mainly transmitted by large, ballistic particles don’t expect them to have identical transmissibility! And so knowing that aerosols are generated and carry virions should be enough to say that aerosol-driven transmission can happen.\nWe have a conflict between the fundamental biology of respiratory virus transmission—“inhaling a particle containing a virion can infect you”—and the claim that “virions in aerosols means measles-level transmissibility”. But given that there are many ways for viruses to vary in transmissibility, I’m going to go for rejecting “aerosols means measles”. It was mechanistic thinking that led me to advocate mask wearing early on, and argue that studies cited against mask wearing were either flawed or misinterpreted:\n\n\nI work on in infectious disease epi1) Given our mechanistic understanding, “medical masks protect” is much more likely than “cloth masks put you at extra risk” (see second image)2) Whatever a cloth mask does/doesn't do to protect you from others, it protects others from you!\n\n— Dylan Morris (@dylanhmorris) March 25, 2020\n\n\nI wish I had done more of my own research into the mechanisms of human aerosol production. Then I could have applied the same thinking to aerosols that I applied to masks. But fortunately Prof. Marr and others were around to educate me on the mechanisms.\nAs it was, even our cautious statement in our NEJM article that aerosol transmission of SARS-CoV-2 was “plausible” got us hammered by some folks on the aerosols-means-measles side of things. They accused us of sensationalism and scaring people. Of course, what they heard us saying by “aerosol transmission is plausible” is “measles-like-transmission is plausible”. So it’s understandable that they saw that as a potentially huge claim.\nBut this is where the pandemic upending how biologists think about transmission is such a welcome learning opportunity. Aerosols doesn’t mean measles. Aerosol-driven transmission may happen for flu, for SARS-CoV-2, for endemic human coronavirus, etc. So why then is measles measles, chickenpox chickenpox, SARS SARS, and flu flu? Well, let’s find out!"
+  },
+  {
+    "objectID": "post/aerosols/index.html#the-implications-of-aerosol-spread",
+    "href": "post/aerosols/index.html#the-implications-of-aerosol-spread",
+    "title": "SARS-CoV-2 can be transmitted by aerosols",
+    "section": "the implications of aerosol spread",
+    "text": "the implications of aerosol spread\nYou may be wondering “so if aerosols doesn’t mean measles, what does it practically mean for me?” 1. Ventilation is key. Outdoors is safer than indoors, and better ventilated indoors is safer than less well ventilated indoors. 2. Masks help. Contrary to popular belief, even cloth masks can filter small (aerosol sized) particles (not perfectly, but don’t let the perfect be the enemy of the good!). Conversely, more filtration is always better. If we could get everyone a well-fitted N95, we should! 3. 6 ft of distance from others may not provide sufficient protection if you spend a long time in a poorly ventilated space. 4. 6 ft is better than 3 ft and worse than 9 ft whether you’re indoors or out. But increased distance helps more outdoors, thanks to better ventilation.\nSo don’t fear that SARS-CoV-2 is measles, but please do take reasonable precautions, and urge your friends and family to do the same."
+  },
+  {
+    "objectID": "publications/index.html",
+    "href": "publications/index.html",
+    "title": "Publications",
+    "section": "",
+    "text": "For now, this is a simple mirror of my publication list on Google Scholar\n\n\n\n\n\n\n\nPublications\n\n1. Kaiser, S. A. Y., Franziska AND Cardenas. Highly pathogenic avian influenza a (H5N1) virus stability in irradiated raw milk and wastewater and on surfaces, united states. Emerging Infectious Diseases 31, 833 (2025).\n\n\n2. Kaiser, D. H. A. W., Franziska AND Morris. Inactivation of avian influenza a (H5N1) virus in raw milk at 63 c and 72 c. New England Journal of Medicine 391, 90–92 (2024).\n\n\n3. Port, D. H. A. R., Julia R AND Morris. Host and viral determinants of airborne transmission of SARS-CoV-2 in the syrian hamster. Elife 12, (2024).\n\n\n4. Bushmaker, C. K. A. M., Trenton AND Yinda. Comparative aerosol and surface stability of SARS-CoV-2 variants of concern. Emerging infectious diseases 29, 1033 (2023).\n\n\n5. Qian, D. H. A. A., Zhihong AND Morris. Variability in donor lung culture and relative humidity impact the stability of 2009 pandemic H1N1 influenza virus on nonporous surfaces. Applied and environmental microbiology 89, e00633–23 (2023).\n\n\n6. Yinda, D. H. A. F., Claude Kwe AND Morris. Stability of monkeypox virus in body fluids and wastewater. Emerging infectious diseases 29, 2065 (2023).\n\n\n7. Bak-Coleman, C. K. A. M., Joseph B AND Tokita. Collective wisdom in polarized groups. Collective Intelligence 1, 26339137221104788 (2022).\n\n\n8. Cooney, F. W. A. M., Daniel B AND Rossine. A PDE model for protocell evolution and the origin of chromosomes via multilevel selection. Bulletin of Mathematical Biology 84, 109 (2022).\n\n\n9. Cooney, D. H. A. L., Daniel B AND Morris. Social dilemmas of sociality due to beneficial and costly contagion. PLoS computational biology 18, e1010670 (2022).\n\n\n10. Gamble, R. J. A. M., Amandine AND Fischer. Heat-treated virus inactivation rate depends strongly on treatment procedure: Illustration with SARS-CoV-2. Applied and environmental microbiology 87, e00314–21 (2021).\n\n\n11. Morris, K. C. A. G., Dylan H AND Yinda. Mechanistic theory predicts the effects of temperature and humidity on inactivation of SARS-CoV-2 and other enveloped viruses. elife 10, e65902 (2021).\n\n\n12. Morris, F. W. A. P., Dylan H AND Rossine. Optimal, near-optimal, and robust epidemic control. Communications Physics 4, 78 (2021).\n\n\n13. Fischer, D. H. A. van D., Robert J AND Morris. Effectiveness of N95 respirator decontamination and reuse against SARS-CoV-2 virus. Emerging infectious diseases 26, 2253 (2020).\n\n\n14. Lam, D. H. A. H., Edward KS AND Morris. The impact of climate and antigenic evolution on seasonal influenza virus epidemics in australia. Nature communications 11, 2741 (2020).\n\n\n15. Metcalf, D. H. A. P., C Jessica E AND Morris. Mathematical models to guide pandemic response. Science 369, 368–369 (2020).\n\n\n16. Morris, V. N. A. R., Dylan H AND Petrova. Asynchrony between virus diversity and antibody selection limits influenza virus evolution. Elife 9, e62105 (2020).\n\n\n17. Stoddard, H. N. A. H., Mary Caswell AND Eyster. Wild hummingbirds discriminate nonspectral colors. Proceedings of the National Academy of Sciences 117, 15112–15122 (2020).\n\n\n18. Van Doremalen, T. A. M., Neeltje AND Bushmaker. Aerosol and surface stability of SARS-CoV-2 as compared with SARS-CoV-1. New England journal of medicine 382, 1564–1567 (2020).\n\n\n19. Morris, K. M. A. P., Dylan H AND Gostic. Predictive modeling of influenza shows the promise of applied evolutionary biology. Trends in microbiology 26, 102–118 (2018)."
+  }
+]
