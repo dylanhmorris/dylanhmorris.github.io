@@ -12,14 +12,9 @@ about:
     - icon: github
       text: Github
       href: https://github.com/dylanhmorris
-    - icon: mastodon
-      text: Mastodon
-      href: https://ecoevo.social/@dylanhmorris
 
 ---
 
-I am a Postdoctoral Researcher at UCLA in the lab of [Jamie Lloyd-Smith](https://faculty.eeb.ucla.edu/lloydsmith/), where I use mathematical models to study virus ecology and evolution. I investigate how the dynamics of virus transmission and host immune responses shape virus evolution. What constrains or facilitates the emergence of zoonotic diseases via cross-species transmission? What forces govern virus antigenic evolution?
+I am Team Lead for Short-Term Forecasting at the [Center for Forecasting and Outbreak Analytics (CFA)](https://cdc.gov/cfa) within the [U.S. CDC](https://cdc.gov). My team develops quantitative models to monitor and project infectious disease dynamics. Much of our modeling work is public and open-source. You can find our projects and others on GitHub within the [CDCGov](https://github.com/cdcgov/) organization.
 
-Additional research interests include developing Bayesian statistical and computational methods for quantitative virology, immunology, and population biology and understanding the mechanisms by which host environment (temperature, humidity, ventilation, etc) affect virus transmission. 
-
-I obtained my PhD in Ecology and Evolutionary Biology from Princeton University, where I was advised by [Simon A. Levin](https://slevin.princeton.edu/).
+Previously, I was a postdoctoral researcher at [UCLA](https://ucla.edu/) in the lab of [Jamie Lloyd-Smith](https://faculty.eeb.ucla.edu/lloydsmith/). I obtained my PhD in Ecology and Evolutionary Biology from [Princeton University](https://princeton.edu), where I was advised by [Simon A. Levin](https://slevin.princeton.edu/).
