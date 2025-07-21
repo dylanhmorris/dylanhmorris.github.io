@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://dylanhmorris.com/publications/index.html</loc>
-    <lastmod>2025-07-21T02:01:56.155Z</lastmod>
+    <loc>https://dylanhmorris.com/index.html</loc>
+    <lastmod>2025-07-21T01:34:03.210Z</lastmod>
   </url>
   <url>
     <loc>https://dylanhmorris.com/post/index.html</loc>
-    <lastmod>2025-07-21T02:01:56.155Z</lastmod>
+    <lastmod>2025-07-21T01:34:03.212Z</lastmod>
   </url>
   <url>
     <loc>https://dylanhmorris.com/contact/index.html</loc>
-    <lastmod>2025-07-21T02:01:56.154Z</lastmod>
-  </url>
-  <url>
-    <loc>https://dylanhmorris.com/index.html</loc>
-    <lastmod>2025-07-21T02:01:56.154Z</lastmod>
+    <lastmod>2025-07-21T01:34:03.210Z</lastmod>
   </url>
   <url>
     <loc>https://dylanhmorris.com/post/aerosols/index.html</loc>
-    <lastmod>2025-07-21T02:01:56.154Z</lastmod>
+    <lastmod>2025-07-21T01:34:03.210Z</lastmod>
+  </url>
+  <url>
+    <loc>https://dylanhmorris.com/publications/index.html</loc>
+    <lastmod>2025-07-21T01:34:03.212Z</lastmod>
   </url>
 </urlset>
