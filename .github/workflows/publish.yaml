@@ -19,6 +19,9 @@ jobs:
       - name: "Set up Quarto"
         uses: "quarto-dev/quarto-actions/setup@v2"
 
+      - name: "Install needed Quarto extensions"
+        run: "quarto install extension --no-prompt schochastics/academicons"
+        
       - name: "Render and publish"
         uses: "quarto-dev/quarto-actions/publish@v2"
         with:
