@@ -8,6 +8,7 @@ on:
 permissions:
   contents: write
   pages: write
+  id-token: write
 
 jobs:
   build:
@@ -30,6 +31,7 @@ jobs:
         with:
           path: "_site"
   deploy:
+    needs: build
     runs-on: "ubuntu-latest"
     steps:
         - name: "Deploy to GitHub pages"
