@@ -1,0 +1,15 @@
+/.quarto/
+
+# emacs
+*#
+*~
+.#*
+
+# macOS
+.DS_Store
+
+# build
+_site
+
+# dependencies
+_extensions

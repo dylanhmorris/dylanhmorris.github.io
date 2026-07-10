@@ -1,0 +1,47 @@
+---
+title: "SARS-CoV-2 can be transmitted by aerosols"
+subtitle: "How we know and why we should have known sooner"
+authors: Dylan H. Morris
+date: 2020-09-26
+featured: false
+draft: false
+
+image: virus-in-water.png
+---
+
+This pandemic should upend how biologists think about virus transmission---for the better. Aerosol spread of SARS-CoV-2 happens. Many respiratory viruses are likely capable of aerosol spread. It has taken the public health community---particularly outside of East Asia---far too long to recognize this. Much of this comes from a longstanding dogma in infectious disease biology that large ballistic respiratory particles ("droplets") are the main drivers of transmission for most respiratory viruses, with a few notable exceptions like measles.
+
+My own greatest regret is having parroted this received wisdom early on. When interviewed about a paper I co-authored on [aerosol and surface stability of SARS-CoV-2](https://www.nejm.org/doi/full/10.1056/nejmc2004973), I said that our aerosol stability findings were important for healthcare settings, but I added that there was "currently no evidence" that everyday people in everyday settings needed to worry about aerosol spread. 
+
+I publicly changed my tune after the [Skagit choir cluster](https://www.latimes.com/world-nation/story/2020-03-29/coronavirus-choir-outbreak), which I saw—and still see—as strong evidence:
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Important as a scientist to update and correct when there is new evidence. When our stability paper came out, I said that we didn&#39;t have clear evidence of principally aerosol-driven transmission in an everyday settings. We now do have such evidence <a href="https://t.co/jE4LuT46O5">https://t.co/jE4LuT46O5</a></p>&mdash; Dylan Morris (@dylanhmorris) <a href="https://twitter.com/dylanhmorris/status/1245171019456929792?ref_src=twsrc%5Etfw">April 1, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+## mechanisms and evidence
+In my work, I make mechanistic mathematical models of biological systems. Experiments are an important part of science, but so are theory, mechanisms, and models. We can often draw strong inferences from known physics, chemistry, and biology before we even do a new experiment. 
+
+And there, there *was* evidence, even before Skagit. People produce small respiratory particles when talking, breathing, and singing. Respiratory virus virions can be found within them. This alone means that we should not rule out aerosol transmission in everyday settings.
+
+I didn't know these facts. I suspect many biologists and many doctors didn't. I learned them from [Prof. Linsey Marr](https://www.nytimes.com/2020/06/12/well/live/Coronavirus-aerosols-linsey-marr.html) and her many excellent colleagues in aerosol science and air quality research.
+
+## the "aerosols means measles" fallacy
+Once you have that key mechanistic insight, most of the arguments against aerosol spread fall to pieces. My (least) favorite is what I call the "aerosols-means-measles" fallacy: that if a disease is capable of aerosol-driven transmission, it will be extremely transmissible à la measles. But there are many ways for infectious diseases to differ in transmissibility besides principal route of transmission. People who think flu and SARS-CoV-2 are both mainly transmitted by large, ballistic particles don't expect them to have identical transmissibility! And so knowing that aerosols are generated and carry virions should be enough to say that aerosol-driven transmission can happen.
+
+We have a conflict between the fundamental biology of respiratory virus transmission---"inhaling a particle containing a virion can infect you"---and the claim that "virions in aerosols means measles-level transmissibility". But given that there are many ways for viruses to vary in transmissibility, I'm going to go for rejecting "aerosols means measles". It was mechanistic thinking that led me to advocate mask wearing early on, and argue that studies cited against mask wearing were either flawed or misinterpreted:
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">I work on in infectious disease epi<br>1) Given our mechanistic understanding, “medical masks protect” is much more likely than “cloth masks put you at extra risk” (see second image)<br>2) Whatever a cloth mask does/doesn&#39;t do to protect you from others, *it protects others from you*!</p>&mdash; Dylan Morris (@dylanhmorris) <a href="https://twitter.com/dylanhmorris/status/1242821787387400194?ref_src=twsrc%5Etfw">March 25, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+I wish I had done more of my own research into the mechanisms of human aerosol production. Then I could have applied the same thinking to aerosols that I applied to masks. But fortunately Prof. Marr and others were around to educate me on the mechanisms. 
+
+As it was, even our cautious statement in our NEJM article that aerosol transmission of SARS-CoV-2 was "plausible" got us hammered by some folks on the aerosols-means-measles side of things. They accused us of sensationalism and scaring people. Of course, what they heard us saying by "aerosol transmission is plausible" is "measles-like-transmission is plausible". So it's understandable that they saw that as a potentially huge claim.
+
+But this is where the pandemic upending how biologists think about transmission is such a welcome learning opportunity. Aerosols doesn't mean measles. Aerosol-driven transmission may happen for flu, for SARS-CoV-2, for endemic human coronavirus, etc. So why then is measles measles, chickenpox chickenpox, SARS SARS, and flu flu? Well, let's find out!
+
+## the implications of aerosol spread
+You may be wondering "so if aerosols doesn't mean measles, what *does* it practically mean for me?" 
+1. Ventilation is key. Outdoors is safer than indoors, and better ventilated indoors is safer than less well ventilated indoors. 
+2. Masks help. Contrary to popular belief, even cloth masks can filter small (aerosol sized) particles (not perfectly, but don't let the perfect be the enemy of the good!). Conversely, more filtration is always better. If we could get everyone a well-fitted N95, we should! 
+3. 6 ft of distance from others may not provide sufficient protection if you spend a long time in a poorly ventilated space. 
+4. 6 ft is better than 3 ft and worse than 9 ft whether you're indoors or out. But increased distance helps more outdoors, thanks to better ventilation.
+
+So don't fear that SARS-CoV-2 is measles, but please do take reasonable precautions, and urge your friends and family to do the same.

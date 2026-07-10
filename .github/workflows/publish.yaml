@@ -1,0 +1,38 @@
+name: "Build and publish site"
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+
+permissions: 
+  contents: write
+  pages: write
+
+jobs:
+  build:
+    runs-on: "ubuntu-latest"
+    steps:
+      - name: "Check out repository"
+        uses: "actions/checkout@v7"
+        
+      - name: "Set up Quarto"
+        uses: "quarto-dev/quarto-actions/setup@v2"
+
+      - name: "Install needed Quarto extensions"
+        run: "quarto install extension --no-prompt schochastics/academicons"
+        
+      - name: "Render"
+        run: "quarto render"
+
+      - name: "Upload artifact"
+        uses: "actions/upload-ages-artifact@v5"
+        with:
+          path: "_site"
+  deploy:
+    runs-on: "ubuntu-latest"
+    steps:
+        - name: "Deploy to GitHub pages"
+          uses: "actions/deploy-pages@v5"
+          with:
+            token: ${{ secrets.GITHUB_TOKEN }}
