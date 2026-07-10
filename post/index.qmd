@@ -10,5 +10,4 @@ listing:
     filter-ui: false
     image-height: 15em
     image-align: left
-
 ---
